@@ -25,7 +25,7 @@ class ComponentsBound
         }
     }
 
-    // рошук компонент і вивід їх  на екран
+    // пошук компонент і вивід їх  на екран
     private static void findComponents()
     {
         visited = new boolean[ N ]; //масив пройденних вершин, true - значить пройдена, false ні
@@ -50,7 +50,7 @@ class ComponentsBound
     {
         Random r = new Random();
 
-        N = 10;
+        N = 5;
 
         G = new int[ N ][ N ]; // матриця суміжності( G - Graph )
 
