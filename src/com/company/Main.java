@@ -31,7 +31,7 @@ class ComponentsBound
         visited = new boolean[ N ]; //масив пройденних вершин, true - значить пройдена, false ні
         Arrays.fill(visited, false);
 
-        System.out.println("Components: ");
+        System.out.println("Компоненти: ");
 
         for (int i = 0; i < N; i++)
         {
@@ -52,9 +52,9 @@ class ComponentsBound
 
         N = 5;
 
-        G = new int[ N ][ N ]; // матриця суміжності( G - Graph )
-
-        for (int i = 0; i < N; i++)
+       // G = new int[ N ][ N ]; // матриця суміжності( G - Graph )
+        G = new int[][]{{0, 1, 0, 0, 0}, {0, 0, 1, 0, 0}, {1, 0, 0, 0, 0}, {1, 0, 0, 0, 0}, {0, 0, 0, 0, 0}};
+       /* for (int i = 0; i < N; i++)
         {
             for (int j = 0; j < N; j++)
             {
@@ -65,9 +65,10 @@ class ComponentsBound
                     G[i][j] = 0;
                 }
             }
-        }
+        }*/
 
         //результат
+        System.out.println("Матриця Суміжності:");
         for (int i = 0; i < N; i++)
         {
             for (int j = 0; j < N; j++)
