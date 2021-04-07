@@ -6,6 +6,8 @@ class ComponentsBound
 {
     private static int[][] G;
     private static int N;
+    private static int n;
+    //private  int n = 0;
 
     private static boolean[] visited;
 
@@ -69,14 +71,16 @@ class ComponentsBound
 
         //результат
         System.out.println("Матриця Суміжності:");
-        for (int i = 0; i < N; i++)
-        {
-            for (int j = 0; j < N; j++)
-            {
+        for (int i=0; i<=N;i++){
+            System.out.print(i + "|");
+        }
+        System.out.println("");
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+
                 System.out.print(G[i][j] + " ");
             }
-
-            System.out.println();
+           // System.out.println((int) (n+1));
         }
 
         findComponents();
